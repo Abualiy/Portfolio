@@ -1,11 +1,11 @@
 # Webstack - Portfolio Project
 Final portfolio project for alx software engineering program. our project is codechat a real-time web based chat app.
 
-## CODECHAT - Real-time web based chat app
+## [CODECHAT](https://github.com/Abualiy/Portfolio/tree/main/codechat) - Real-time web based chat app
 
-<img src="codechat/src/asset/logo.png">
+[<img src="codechat/src/asset/logo.png">](https://github.com/Abualiy/Portfolio/tree/main/codechat)
 
-## CODECHAT:  is web based real-time chat application built using React.js and firebase. 
+## [CODECHAT](https://github.com/Abualiy/Portfolio/tree/main/codechat):  is web based real-time chat application built using React.js and firebase. 
 ### - Feature: Real-time messaging, user authentication and more..
 ### - Aim: To create chatting environment for programmer
 ### - Goal: Satisfying users with our service
