@@ -1,7 +1,7 @@
 import React from 'react'
-import camera from '../assets/video.png'
-import addFriend from '../assets/addfriend.png'
-import more from '../assets/more.png'
+import camera from '../asset/video.png'
+import addFriend from '../asset/addfriend.png'
+import more from '../asset/more.png'
 import Messages from './Messages'
 import Input from './Input'
 

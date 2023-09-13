@@ -1,6 +1,6 @@
 import React from 'react'
-import user from '../assets/person.jpg'
-import logo from '../assets/logo.png'
+import user from '../asset/person.jpg'
+import logo from '../asset/logo.png'
 const Navbar = () => {
     return (
         <div className='navbar'>

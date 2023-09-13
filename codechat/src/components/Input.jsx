@@ -1,6 +1,6 @@
 import React from 'react'
-import attach from '../assets/attach.png'
-import gallery from '../assets/gallery.png'
+import attach from '../asset/attach.png'
+import gallery from '../asset/gallery.png'
 const Input = () => {
     return (
         <div className='input'>

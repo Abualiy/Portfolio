@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/person.jpg'
+import profile from '../asset/person.jpg'
 const Search = () => {
     return (
         <div className='search'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/person.jpg'
+import profile from '../asset/person.jpg'
 const Message = () => {
     return (
         <div className='message owner'>
