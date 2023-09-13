@@ -23,8 +23,6 @@ Final portfolio project for alx software engineering program. our project is cod
 ### - Firebase for real-time features and easy authentication.
 
 
-
-
 # Authors
 ### Akrem Beker - [Github](https://github.com/Abualiy), [Email](akremmuktar332@gmail.com)
 ### Neima Nesru - [Github](https://github.com/Nemuuuu), [Email](neimanesru34@gmail.com)
