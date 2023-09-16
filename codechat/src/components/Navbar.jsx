@@ -21,7 +21,6 @@ const Navbar = () => {
                 </div>
                 <button onClick={() => signOut(auth)}>logout</button>
             </div>
-            
         </div>
     )
 }

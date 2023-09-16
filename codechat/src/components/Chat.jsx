@@ -17,17 +17,17 @@ const Chat = () => {
     <div className="chat">
       <div className="chatInfo">
         <div className="userInfo">
-        <img src={data.user?.photoURL} alt="" />
-        <span>{data.user?.displayName}</span>
+          <img src={data.user?.photoURL} alt="" />
+          <span>{data.user?.displayName}</span>
         </div>
         <div className="chatIcons">
-          <img src={Cam} alt="" onClick={alerts}/>
-          <img src={Add} alt="" onClick={alerts}/>
-          <img src={More} alt="" onClick={alerts}/>
+          <img src={Cam} alt="" onClick={alerts} />
+          <img src={Add} alt="" onClick={alerts} />
+          <img src={More} alt="" onClick={alerts} />
         </div>
       </div>
       <Messages />
-      <Input/>
+      <Input />
     </div>
   );
 };

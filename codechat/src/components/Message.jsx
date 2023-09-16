@@ -26,7 +26,6 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-
       </div>
       <div className="messageContent">
         <div className="cont">

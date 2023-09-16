@@ -13,7 +13,7 @@ function SplashScreen() {
         }, 5000);
 
         return () => {
-            clearTimeout(timeout); 
+            clearTimeout(timeout);
         };
     }, []);
 
@@ -34,10 +34,7 @@ function SplashScreen() {
                     <div className="loader"></div>
                     <code><span className='percent'>Loading...</span></code>
                 </div>
-
             </header>
-
-
         </div>
     ) : <Navigate to="/" />;
 }

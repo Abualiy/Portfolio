@@ -65,8 +65,6 @@ const Search = () => {
     
   };
 
-
-
   const handleSelect = async (selectedUser) => {
     // Your code to initiate a chat with the selected user goes here
     // ...

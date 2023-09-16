@@ -252,7 +252,6 @@
         }
     }
 }
-
 // Login and Register page styleSheet
 // End
 
@@ -265,19 +264,10 @@
     justify-content: center;
 
     .container {
-        // border: 1px solid white;
-        // border-radius: 10px;
         width: 100%;
         height: 100%;
         display: flex;
         overflow: hidden;
-
-        // @include laptop() {
-        //     width: 100%;
-        //     height: 100%;
-        //     border-radius: 0px;
-
-        // }
 
         .sidebar {
             flex: 1;
@@ -515,16 +505,14 @@
                 scrollbar-width: 1px;
                 overflow-y: scroll;
 
-
-
                 .message {
                     display: flex;
                     gap: 20px;
                     margin-bottom: 20px;
                     color: #282c34;
 
-
                     .messageInfo {
+
                         img {
                             width: 40px;
                             height: 40px;
@@ -536,8 +524,6 @@
                                 height: 20px;
                             }
                         }
-
-
                     }
 
                     .messageContent {
@@ -550,6 +536,7 @@
                             display: flex;
                             flex-direction: column;
                             align-items: flex-end;
+
                             p {
                                 font-family: Arial, sans-serif;
                                 background-color: white;
@@ -570,8 +557,6 @@
                                 width: 50%;
                             }
                         }
-
-
                     }
 
                     &.owner {
@@ -586,7 +571,6 @@
                                 border-radius: 10px 0 10px 10px;
                             }
                         }
-
                     }
                 }
             }
@@ -611,8 +595,6 @@
                     @include mobile() {
                         font-size: 12px;
                     }
-
-
 
                     &::placeholder {
                         color: lightgray;
