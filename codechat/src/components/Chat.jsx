@@ -1,27 +1,35 @@
-import React from 'react'
-import camera from '../asset/video.png'
-import addFriend from '../asset/addfriend.png'
-import more from '../asset/more.png'
-import Messages from './Messages'
-import Input from './Input'
+import React, { useContext } from "react";
+import Cam from "../asset/cam.png";
+import Add from "../asset/add.png";
+import More from "../asset/more.png";
+import Messages from "./Messages";
+import Input from "./Input";
+import { ChatContext } from "../context/ChatContext";
 
 const Chat = () => {
-    return (
-        <div className='chat'>
-            <div className="chatInfo">
-                <span>Neima</span>
-                <div className="chatIcons">
-                    <img src={camera} alt="" />
-                    <img src={addFriend} alt="" />
-                    <img src={more} alt="" />
-                </div>
-            </div>
+  const { data } = useContext(ChatContext);
 
-            <Messages />
-            <Input />
+  const alerts = () => {
+    alert("This service will start soon!")
+  }
 
+  return (
+    <div className="chat">
+      <div className="chatInfo">
+        <div className="userInfo">
+        <img src={data.user?.photoURL} alt="" />
+        <span>{data.user?.displayName}</span>
         </div>
-    )
-}
+        <div className="chatIcons">
+          <img src={Cam} alt="" onClick={alerts}/>
+          <img src={Add} alt="" onClick={alerts}/>
+          <img src={More} alt="" onClick={alerts}/>
+        </div>
+      </div>
+      <Messages />
+      <Input/>
+    </div>
+  );
+};
 
-export default Chat
+export default Chat;
