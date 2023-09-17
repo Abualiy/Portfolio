@@ -22,7 +22,7 @@ const Register = () => {
         const file = e.target[5].files[0];
 
         // Check for empty fields
-        if (!firstName || !lastName || !displayName || !email || !password || !file) {
+        if (!firstName || !lastName || !displayName || !email || !password ) {
             setErr("All fields are required.");
             setLoading(false);
             return;
@@ -107,7 +107,7 @@ const Register = () => {
                     <input style={{ display: "none " }} type="file" id="file" />
                     <label htmlFor="file">
                         <img src={Add} alt="Add an avatar" />
-                        <span>Add an avatar</span>
+                        <span>Add Profile Picture</span>
                     </label>
                     <button disabled={loading}>
                         {loading ? "Uploading..." : "Sign up"}
