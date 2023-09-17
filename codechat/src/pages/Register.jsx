@@ -22,7 +22,7 @@ const Register = () => {
         const file = e.target[5].files[0];
 
         // Check for empty fields
-        if (!firstName || !lastName || !displayName || !email || !password ) {
+        if (!firstName || !lastName || !displayName || !email || !password || !file ) {
             setErr("All fields are required.");
             setLoading(false);
             return;
