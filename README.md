@@ -1,8 +1,6 @@
 # Webstack - Portfolio Project
 Final portfolio project for alx software engineering program. our project is codechat a real-time web based chat app.
-### Check out this cool demo video on YouTube :
-
-<video src="https://youtu.be/HauXytu9g6w" controls title="Title"></video>
+### Check out this [cool demo video](https://youtu.be/HauXytu9g6w) on YouTube.
 ## [CODECHAT](https://github.com/Abualiy/Portfolio/tree/main/codechat) - Real-time web based chat app
 
 [<img src="codechat/src/asset/logo.png">](https://github.com/Abualiy/Portfolio/tree/main/codechat)
