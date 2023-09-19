@@ -3,12 +3,16 @@ import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 
 const Message = ({ message }) => {
+  // Access current user information from the AuthContext
   const { currentUser } = useContext(AuthContext);
+  // Access chat data from the ChatContext
   const { data } = useContext(ChatContext);
 
+  // Access chat data from the ChatContext
   const ref = useRef();
 
   useEffect(() => {
+    // Scroll the message element into view smoothly when the message changes
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 

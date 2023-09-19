@@ -5,15 +5,18 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
 const Login = () => {
+   // State for error message and navigation
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+   // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
 
     try {
+       // Sign in with email and password using Firebase Authentication
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (err) {

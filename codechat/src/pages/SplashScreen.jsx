@@ -5,13 +5,16 @@ import { Navigate } from 'react-router-dom';
 
 
 function SplashScreen() {
+    // State to control visibility
     const [visible, setVisible] = useState(true);
 
+    // Use useEffect to set a timeout for hiding the splash screen
     useEffect(() => {
         const timeout = setTimeout(() => {
             setVisible(false);
         }, 5000);
 
+        // Clean up the timeout when the component unmounts
         return () => {
             clearTimeout(timeout);
         };

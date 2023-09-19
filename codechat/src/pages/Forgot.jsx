@@ -6,18 +6,23 @@ import { sendPasswordResetEmail } from "firebase/auth"
 
 
 const Forgot = () => {
+     // State for error message and navigation
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
-
+    // Function to handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
         const emailVal = e.target.email.value;
+
+        // Send a password reset email
         sendPasswordResetEmail(auth, emailVal)
             .then(() => {
+                // Redirect to the 'alert' page after successful email send
                 navigate("/alert")
             })
             .catch(err => {
+                 // Handle errors, such as user not found or other issues
                 if (err.code === "auth/user-not-found") {
                     setError("User not found. Please check your email.");
                 } else {
